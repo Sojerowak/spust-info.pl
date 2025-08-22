@@ -161,6 +161,12 @@ h3 {
     transform: translateY(-3px);
 }
 
+.zdjecietekst {
+    display: flex;
+     flex-direction: row; 
+     gap: 40px;
+      align-items: center;
+}
 footer {
     background-color: #fafafa;
     color: #555;
@@ -193,5 +199,16 @@ footer {
 
     .nav-links.active {
         display: flex;
+    }
+    .zdjecietekst {
+        flex-direction: column;
+    }
+
+    .zdjecietekst > img{
+        width: 100%;
+    }
+
+    #chikalettaimg {
+        width: 100%;
     }
 }
