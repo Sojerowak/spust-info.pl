@@ -28,6 +28,8 @@ header {
     border-bottom: 1px solid #eee;
 }
 
+
+
 nav {
     background-color: #f5f3f3;
     padding: 10px 20px;
@@ -50,6 +52,15 @@ nav {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.artyk
+{
+    width: 80%;
+    text-align: justify;
+    font-size: 2em;
+    margin-bottom: 5vh;
+    inline-size: 1.5;
 }
 
 nav a {
@@ -209,6 +220,10 @@ footer {
     }
 
     #chikalettaimg {
+        width: 100%;
+    }
+
+    .artyk {
         width: 100%;
     }
 
