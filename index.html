@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>spust-info.pl</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,50 +15,60 @@
 </header>
 
 <nav>
-    <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Przyklejona do lewej krawędzi paska -->
+    <div class="nav-date" id="current-date">Ładowanie daty...</div>
+    
+    <div class="menu-toggle" id="menu-toggle" onclick="document.getElementById('nav-links').classList.toggle('active')">
+        <span></span><span></span><span></span>
     </div>
-
-     <div class="nav-links" id="nav-links">
+    
+    <!-- Idealnie wyśrodkowane menu -->
+    <div class="nav-links" id="nav-links">
         <a href="index.html">Strona Główna</a>
         <a href="aktualnosci.html">Aktualności</a>
         <a href="podcasty.html">Podcasty</a>
         <a href="onas.html">O nas</a>
         <a href="kontakt.html">Kontakt</a>
     </div>
+
+    <!-- Przyklejony do prawej krawędzi paska -->
+    <div class="nav-time" id="current-time">00:00</div>
 </nav>
 
-<div class="container">
+<main class="container">
+    
     <div class="intro">
         <h2>Witamy na spust-info.pl</h2>
         <p>Jesteś zmęczony, że wszystkie informacje ze świata są trudne do przełknięcia? 
-            Nasz comiesięczny spust informacji podsumuje to wszystko, byście mogli być na bieżąco w przystępnej formie.
+           Nasz comiesięczny spust informacji podsumuje to wszystko, byście mogli być na bieżąco w przystępnej formie.
         </p>
     </div>
 
     <h3 class="news-section-title">Ostatnie Spusty:</h3>
+    
     <div class="news-preview">
-        <div class="news-item">
+        <article class="news-item">
+            <span class="tag">Historia</span>
             <h4>Historia Pszczyńskich Żubrów</h4>
             <p>Te wielkie ssaki stały się symbolem perły Górnego Śląska, poznaj historię skąd znalazły się na terenie lasów pszczyńskich, jak ważną rolę pełniły w histori gatunku, oraz wiele więcej.</p>
-            <a href="historia-pszczynskich-zubrow.html">Czytaj więcej →</a>
-        </div>
-         <div class="news-item">
+            <a href="historia-pszczynskich-zubrow.html" class="read-more">Czytaj więcej →</a>
+        </article>
+
+        <article class="news-item">
+            <span class="tag">Wydarzenia</span>
             <h4>Zespół Astral w Pszczynie</h4>
-            <p>Już w najbliższy piątek, 18 lipca, centrum przesiadkowe w Pszczynie ponownie zamieni się w scenę koncertową. W ramach cyklu „Przesiądź się na kulturę” wystąpi młodzieżowy zespół Astral, związany z Powiatowym Ogniskiem Pracy Pozaszkolnej w Pszczynie</p>
-            <a href="astral.html">Czytaj więcej →</a>
-        </div>
+            <p>Już w najbliższy piątek, 18 lipca, centrum przesiadkowe w Pszczynie ponownie zamieni się w scenę koncertową. W ramach cyklu „Przesiądź się na kulturę” wystąpi młodzieżowy zespół Astral, związany z Powiatowym Ogniskiem Pracy Pozaszkolnej w Pszczynie.</p>
+            <a href="astral.html" class="read-more">Czytaj więcej →</a>
+        </article>
     </div>
-</div>
+
+</main>
 
 <footer>
-    <p>&copy; 2025 spust-info.pl. Wszelkie prawa zastrzeżone.</p>
+    <p>&copy; 2026 spust-info.pl. Wszelkie prawa zastrzeżone.</p>
 </footer>
 
-<script src="js.js">
-</script>
+<script src="js.js"></script>
 
 </body>
 </html>
