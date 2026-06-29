@@ -187,35 +187,62 @@ footer {
     border-top: 1px solid #eee;
 }
 
+
 /* Responsive navigation */
 @media (max-width: 768px) {
+    /* 1. Ukrywanie daty i czasu, aby uniknąć ścisku */
+    .nav-date, .nav-time {
+        display: none !important;
+    }
+    
+    /* 2. Układ paska nawigacji na telefonie */
+    nav {
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+
+    /* 3. Przycisk menu (Hamburger) */
+    .menu-toggle {
+        display: flex;
+        align-self: flex-start;
+        margin-bottom: 10px;
+        z-index: 101; /* Gwarancja, że jest na wierzchu */
+    }
+
+    /* 4. Rozwijana lista linków (Połączenie stylów wizualnych) */
     .nav-links {
-        display: none;
+        display: none; /* Domyślnie ukryte */
         flex-direction: column;
         width: 100%;
         background-color: #ffffff;
         border-top: 1px solid #eee;
         margin-top: 10px;
+        padding-top: 10px;
     }
 
+    /* Wymuszenie pokazania menu po kliknięciu */
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    /* Wygląd pojedynczych linków (Twoje środkowanie) */
     .nav-links a {
         text-align: center;
         padding: 15px;
         border-top: 1px solid #f0f0f0;
+        width: 100%;
+        display: block;
     }
 
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
+    /* 5. Twoje oryginalne klasy artykułów, zdjęć i multimediów */
     .zdjecietekst {
         flex-direction: column;
     }
 
-    .zdjecietekst > img{
+    .zdjecietekst > img {
         width: 100%;
     }
 
